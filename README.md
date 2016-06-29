@@ -1,7 +1,25 @@
 # Ember-survey
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+##Tasks:
+* Schema
+* Wireframes
+* Users: 
+  - model/associations
+  - encryption/authentication
+  - login route
+  - logout route
+  - authorization based on role
+* Surveys:
+  - model/associations
+  - update route
+  - show (stretch)
+* Questions:
+  - model/associations
+  - index route
+  - new route
+  - update route
+  - delete route
+* Validations
 
 ## Prerequisites
 
