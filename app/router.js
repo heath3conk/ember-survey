@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 Router.map(function() {
   this.route('login');
   this.route('questions');
+  this.route('surveys');
 });
 
 export default Router;

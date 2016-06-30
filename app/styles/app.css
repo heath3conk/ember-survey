@@ -5,7 +5,7 @@
   color: #444;
 }
 
-.question-container {
+.object-container {
   border: 2px solid rgba(91,158,213,.8);
   border-radius: 15px;
   text-align: center;
@@ -17,6 +17,13 @@
 textarea {
   width: 75%;
   border: 1px solid rgba(91,158,213,.8);
+  margin: 5px;
+}
+
+input {
+  width: 75%;
+  border: 1px solid rgba(91,158,213,.8);
+  margin: 10px;
 }
 
 .question-field {

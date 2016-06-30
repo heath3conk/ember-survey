@@ -1,0 +1,19 @@
+<div class="object-container">
+  <h2>Current Surveys</h2>
+  {{#each model as |survey|}}
+    <div>{{survey.title}}</div>
+  {{/each}}
+</div>
+
+<div class="object-container">
+  <h2>Add a Survey</h2>
+  <div class="survey-new">
+    <div>
+      {{input value=title placeholder="Survey Title" class="question-field"}}
+    </div>
+    <div>
+      <button class="button" {{action "addSurvey"}}>Add New Survey</button>
+    </div>
+  </div>
+</div>
+{{!-- need to redirect to the addQuestion path when the survey loads successfully --}}
