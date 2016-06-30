@@ -4,7 +4,7 @@ import attr from 'ember-data/attr';
 // need to add survey model and then update relationship so a question belongsTo a survey
 
 export default Model.extend({
-  surveyId: attr('number'),
+  surveyId: attr('number', {defaultValue: 1 }),
   questionText: attr('string'),
   choiceOne: attr('string'),
   choiceTwo: attr('string'),

@@ -2,10 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
   sortProperties: ['timestamp'],
-  sortAscending: false, // sorts post by timestamp
+  sortAscending: false, // sorts questions by timestamp
   actions: {
     addQuestion: function() {
       var newQuestion = this.store.createRecord('question', {
+        surveyId: this.get('surveyId'),
         questionText: this.get('questionText'),
         choiceOne: this.get('choiceOne'),
         choiceTwo: this.get('choiceTwo'),
