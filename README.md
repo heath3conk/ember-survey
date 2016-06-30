@@ -3,6 +3,7 @@
 ##Tasks:
 * Schema
 * Wireframes
+* Database?? Firebase - DB, server, hosting
 * Users: 
   - model/associations
   - encryption/authentication

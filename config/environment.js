@@ -4,6 +4,17 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-survey',
     environment: environment,
+    contentSecurityPolicy:  {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+    firebase: { 
+      apiKey: 'AIzaSyCmEEVtuvpG5rfammormBFh5kFoah-p5Ic',
+      authDomain: 'survey-widget.firebaseio.com',
+      databaseURL: "https://survey-widget.firebaseio.com/",
+      storageBucket: 'survey-widget.appspot.com' 
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
