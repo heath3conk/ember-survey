@@ -1,0 +1,32 @@
+* {
+  font-family: "RobotoDraft","Helvetica","Tahoma","Geneva","Arial",sans-serif;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  color: #444;
+}
+
+.question-container {
+  border: 2px solid rgba(91,158,213,.8);
+  border-radius: 15px;
+  text-align: center;
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+textarea {
+  width: 75%;
+  border: 1px solid rgba(91,158,213,.8);
+}
+
+.question-field {
+  font-weight: bold;
+}
+
+.button {
+  background: #f79420;
+  color: #fff;
+  box-shadow: 0 .0625em .1875em rgba(0,0,0,.12),0 .0625em .125em rgba(0,0,0,.24);
+  border-radius: 3px;
+  padding: 5px;
+}
