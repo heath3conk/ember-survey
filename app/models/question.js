@@ -1,7 +1,6 @@
 import Model from 'ember-data/model';
 import attr from 'ember-data/attr';
-// import { belongsTo, hasMany } from 'ember-data/relationships';
-// need to add survey model and then update relationship so a question belongsTo a survey
+import { belongsTo } from 'ember-data/relationships';
 
 export default Model.extend({
   surveyId: attr('number', {defaultValue: 1 }),
@@ -10,5 +9,6 @@ export default Model.extend({
   choiceTwo: attr('string'),
   choiceThree: attr('string'),
   choiceFour: attr('string'),
-  timestamp: attr('number') // does EmberData or Firebase update this automatically?
+  timestamp: attr('number'), // does EmberData or Firebase update this automatically?
+  survey: belongsTo('survey')
 });
