@@ -10,5 +10,5 @@ export default Model.extend({
   choiceThree: attr('string'),
   choiceFour: attr('string'),
   timestamp: attr('number'), // does EmberData or Firebase update this automatically?
-  survey: belongsTo('survey')
+  survey: belongsTo('survey', { async: true })
 });
