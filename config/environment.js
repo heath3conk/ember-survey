@@ -11,7 +11,7 @@ module.exports = function(environment) {
     },
     firebase: { 
       apiKey: 'AIzaSyCmEEVtuvpG5rfammormBFh5kFoah-p5Ic',
-      authDomain: 'survey-widget.firebaseio.com',
+      authDomain: 'survey-widget.firebaseapp.com',
       databaseURL: "https://survey-widget.firebaseio.com/",
       storageBucket: 'survey-widget.appspot.com' 
     },
