@@ -12,6 +12,7 @@
     - Couldn't get that to work on the "rest" branch.
   * Edit/Destroy
     - I haven't attempted these. They're the next steps in the Emberfire tutorial I've been using. They seem pretty straightforward but...
+    - 
 ##Other notes/interesting things:
   * Does Ember add an ID to DOM elements created with the {{}} helpers?
   * Looked at Torii for authentication but it seemed to focus on using external providers like Twitter, Google, etc. and I thought that would make it more difficult to handle authorization based on users' roles. (If anyone who has a Google account can login, how do I filter users?)
