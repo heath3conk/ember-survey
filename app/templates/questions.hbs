@@ -1,31 +1,9 @@
 <div class="object-container">
   <h2>Current Survey Questions</h2>
   {{#each model as |question|}}
-    <div>{{question.questionText}}</div>
+    <div>{{#link-to "questions/update" question}}{{question.questionText}}{{/link-to}}</div>
   {{/each}}
 </div>
 
-<div class="object-container">
-  <h2>Add a Question</h2>
-  <div class="question-new">
-    <div>
-      {{textarea value=questionText placeholder="QUESTION" class="question-field"}}
-    </div>
-    <div>
-      {{textarea value=choiceOne placeholder="First Answer Choice"}}
-    </div>
-    <div>
-      {{textarea value=choiceTwo placeholder="Second Answer Choice"}}
-    </div>
-    <div>
-      {{textarea value=choiceThree placeholder="Third Answer Choice"}}
-    </div>
-    <div>
-      {{textarea value=choiceFour placeholder="Fourth Answer Choice"}}
-    </div>
-    <div>
-      <button class="button" {{action "addQuestion"}}>Add Question</button>
-    </div>
-  </div>
-</div>
-{{!-- need to make this relate to the correct survey, nested? how to get params? --}}
+{{outlet}}
+{{!-- link to GET questions/new --}}

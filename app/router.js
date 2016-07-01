@@ -7,7 +7,9 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('login');
-  this.route('questions');
+  this.route('questions', function() {
+    this.route('question', { path: '/:question_id', resetNamespace: true });
+  });
   this.route('surveys');
 });
 
